@@ -26,14 +26,43 @@ body {
 
 .heading h2 {
   font-size: 2.6rem;
+  margin-bottom: 1.4rem;
 }
 
 .btn-time {
   font-family: 'Geologica', sans-serif;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
   font-size: 1.6rem;
   border-radius: 11px;
   border: none;
-  margin-right: 1.4rem;
+  margin-right: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
+}
+
+.countdown-container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+#countdown-box {
+  font-size: 5rem;
+  margin-bottom: 1.6rem;
+}
+
+.icon-svg {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+#myVideo {
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
 }
