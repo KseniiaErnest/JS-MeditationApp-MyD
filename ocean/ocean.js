@@ -19,6 +19,7 @@ pauseButton.addEventListener('click', pauseTimer);
 // Event for minutes options 
 timerBtn.forEach((btn) => {
   btn.addEventListener('click', function() {
+    document.querySelector('#play-pause-btn-box').style.visibility = 'visible';
     const duration = parseInt(btn.dataset.timer);
     startTimer(duration);
   });
@@ -63,12 +64,18 @@ function stopTimer() {
 // Function to pause timer
 function pauseTimer() {
   stopTimer();
+  // Stop Audio and Video
+  document.querySelector('#myAudio').pause()
+  document.querySelector('#myVideo').pause();
   disable(pauseButton); enable(playButton);
 };
 
 // Function to play timer
 function playTimer() {
   timerId = setInterval(updateCountdown, 1000);
+  // Play Music and Video
+  document.querySelector('#myAudio').play();
+  document.querySelector('#myVideo').play();
   disable(playButton), enable(pauseButton);
 };
 

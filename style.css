@@ -17,6 +17,7 @@ html {
   gap: 1rem;
   padding: 0.5rem;
   margin-top: 11rem;
+  
 }
 
 .header img {
@@ -62,5 +63,9 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
+  margin-right: 1.2rem;
+
+
 }
 

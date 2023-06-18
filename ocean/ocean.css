@@ -7,7 +7,6 @@
 html {
   font-size: 100%;
   font-family: 'Geologica', sans-serif;
-  color: #fff;
 }
 
 body {
@@ -27,6 +26,7 @@ body {
 .heading h2 {
   font-size: 2.6rem;
   margin-bottom: 1.4rem;
+  color: #000;
 }
 
 .btn-time {
@@ -38,6 +38,8 @@ body {
   margin-right: 1.8rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
+  background-color: rgba(255, 255, 255, 0.2) ;
+  backdrop-filter: blur(15px);
 }
 
 .countdown-container-main {
@@ -50,6 +52,7 @@ body {
 #countdown-box {
   font-size: 5rem;
   margin-bottom: 1.6rem;
+  color: #000;
 }
 
 .icon-svg {
@@ -65,4 +68,9 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -10;
+}
+
+#play-pause-btn-box {
+  visibility: hidden;
+  color: #000;
 }
