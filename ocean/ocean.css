@@ -27,6 +27,7 @@ body {
   font-size: 2.6rem;
   margin-bottom: 1.4rem;
   color: #000;
+  text-align: center;
 }
 
 .btn-time {
@@ -37,6 +38,7 @@ body {
   border: none;
   margin-right: 1.8rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  cursor: pointer;
 
   background-color: rgba(255, 255, 255, 0.2) ;
   backdrop-filter: blur(15px);
@@ -73,4 +75,16 @@ body {
 #play-pause-btn-box {
   visibility: hidden;
   color: #000;
+  cursor: pointer;
+}
+
+@media all and (max-width: 32.5em) {
+  .heading {
+    margin-top: 5rem;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

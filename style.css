@@ -14,9 +14,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-top: 11rem;
+  text-align: center;
   
 }
 
@@ -35,14 +37,17 @@ html {
 .main-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.8rem;
   margin-top: 3rem;
+  padding: 0 1rem;
 }
 
 .link:link, .link:active {
   font-size: 1.4rem;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .link:hover, .link:visited {
@@ -65,7 +70,25 @@ html {
   align-items: center;
   gap: 0.5rem;
   margin-right: 1.2rem;
+}
 
+@media all and (max-width: 45em) {
+  html {
+    font-size: 80%;
+  }
 
+  .header {
+    margin-top: 3rem;
+  }
+
+  .header h1 {
+    line-height: 1.3;
+  }
+  .main-container {
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 3rem;
+
+  }
 }
 
